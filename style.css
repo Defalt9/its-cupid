@@ -1,4 +1,5 @@
 /* -------  General Styles ------- */
+
 .textcenter {
   text-align: center;
 }
@@ -38,16 +39,11 @@ section.alternate-background {
   background-color: #a35766;
   color: #ecdbc9;
   margin: 0 auto; 
-  width: 1700px;
-}
-
-img {
-  width: 100%;
   
 }
 
-main img {
-  width: 500px;
+img {
+  width:100%;
 }
 
 
@@ -77,7 +73,7 @@ header {
 
 header nav {
   display: flex;
-  padding-top: 25px;
+  
 }
 
 
@@ -110,13 +106,26 @@ header nav ul li a:hover {
 }
 
 /* -------  Join Form ------- */
+
+
+
 form {
   border: 2px solid #6b1a22;
-  width: 300px;
   display: block;
-  
-  
+  padding: 10px;
 }
+
+  .join-form {
+    color: #8b0000;
+  }
+
+
+.input-container {
+display: flex;
+justify-content: space-between;
+}
+
+
 
 form label {
   font-weight: bold;
@@ -139,13 +148,50 @@ form button {
   width: 100%;
 }
 
-/* ---Download section --- */
-
-.download-container {
-  display: block;
+/* ---About--- */
+#about h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.boxx {
+  gap: 20px;
 }
 
+   .one {
+    padding: 10px;
+    color:#8b0000;
+  }
 
+  .two {
+    padding: 10px;
+  }
+
+  .three {
+    padding: 10px;
+  }
+
+
+
+/* ---Download section --- */
+.
+/* ---Blog --- */
+
+
+.blog-ctnr {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+
+}
+
+.blog-item{
+  width: 100%;
+}
+
+#blog h2 {
+  text-align: center;
+}
 
 /* -------  Footer ------- */
 
@@ -162,29 +208,87 @@ footer p {
 /* -------  Media Query ------- */
 @media all and (min-width: 480px) {
 
-  header {
+  header .logocnt {
     display: flex;
     justify-content: space-between;
-    padding: 0 30px;
+   align-items: flex-end;
+   
   }
+  
 
-  #join {
+ 
+ 
+
+  #join .sec {
     display: flex;
-
-
+    gap: 10px;
+    justify-content: flex-start;
+   
   }
+  
+  .box-one {
+    flex: 2 1 0;
+  }
+
+  .box-two {
+    flex: 1 1 0;
+  }
+  
+  .join-form {
+    margin-top: 140px;;
+  }
+
+
+  .boxx { display: flex; 
+    }
+.one {
+ flex: 1 1 0
+}
+.two {
+ flex: 1 1 0
+}
+.three {
+flex: 2 1 0
+}
+
+  
+  
+
+  
 
   .download-container {
     display: flex;
+    justify-content: flex-start;
   }
-
+  .one {
+    flex: 1 1 0;
+  
+  }
+  .two {
+    flex: 1 1 0;
+  }
+  
   .group {
     flex-direction: row;
   }
+  .dctnr {
+    display:flex;
+    justify-content: flex-start;
+    gap: 10%;
+    align-items: center;
+  }
 
-  
+ .blog-item {
+ width: 48%;
+ }
 
-  
+ .blog-ctnr {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+ }
+
+
 
 
 }
