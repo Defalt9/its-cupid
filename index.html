@@ -23,6 +23,7 @@
 
   <body>
     <header>
+      <div class="logocnt">
       <div class="logo">ThinkfulCupid</div>
       <nav>
         <ul id="menu">
@@ -32,17 +33,25 @@
           <li><a href="#blog">Blog</a></li>
         </ul>
       </nav>
+        </div>
+        </div>
+  </div>
     </header>
 
     <main>
       <!-- Join -->
-      <section id="join">
+      <section id="join" class="img-join">
+        <div class="sec">
+          <div class="box-one">
         <img src="images/love.png" alt="ThinkfulCupid - love" />
+      </div>
         <!-- Add join form here -->
-        <div style="margin: 0 auto">
+        <div class="box-two">
+        <div class="join-form">
           <h2>Find your perfect match</h2>
+          <div>
           <form>
-            <div>
+            <div class="input-container">
               <label for="email">Email:</label>
               <input
                 id="email"
@@ -52,8 +61,9 @@
                 required
               />
             </div>
+          
 
-            <div>
+            <div  class="input-container">
               <label for="password">Create a password:</label>
               <input
                 id="password"
@@ -63,7 +73,12 @@
               />
             </div>
 
-            <div>
+            <div class="input-container">
+              <label for="username">Username:</label>
+              <input id="username" type="text" name="username" required />
+            </div>
+
+            <div class="input-container">
               <label for="gender">I am a...</label>
               <select name="gender" id="gender" size="1">
                 <option value="male">male</option>
@@ -71,33 +86,35 @@
                 <option value="other">other</option>
               </select>
             </div>
-            <div>
-              <label for="username">Username:</label>
-              <input id="username" type="text" name="username" required />
-            </div>
+          
             <button type="submit">Join</button>
           </form>
         </div>
+        </div>
+        </div>
+        </div>
+      
       </section>
 
       <!-- About -->
+      
       <section id="about" class="alternate-background">
-        <h2 style="text-align: center">About</h2>
-        <div class="container;" style="display: flex">
-          <div style="margin: 0 20px">
+        <h2>About</h2>
+        <div class="boxx">
+          <div class="one">
             <img
               src="images/sunset-with-heart.png"
               alt="ThinkfulCupid - Sunset with heart"
             />
           </div>
-          <div style="margin: 0 20px">
+          <div class="two">
             <img
               src="images/two-people-sunset-candles.png"
               alt="ThinkfulCupid - Two people with sunset and candles"
             />
           </div>
-          <div style="margin: 50px 50px 50px 50px">
-            <p style="margin: -60px 450px 10px 0">
+          <div class="three">
+            <p>
               Fusce porta odio nunc, eget pretium massa rutrum sit amet. Etiam
               fringilla aliquam dapibus. Maecenas quis nisi sed turpis aliquam
               porttitor eget ut quam. Sed vel scelerisque ex. Duis in pharetra
@@ -109,13 +126,16 @@
             </p>
           </div>
         </div>
+      
       </section>
 
       <!-- Download -->
       <section id="download">
         <div class="download-container">
-          <div>
+          <div class="dctnr">
+          <div class="one">
             <h2 class="textcenter">Download the App</h2>
+            <div>
             <p class="textcenter">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
               molestie in est id efficitur. Sed hendrerit ut turpis quis
@@ -136,19 +156,27 @@
               </li>
             </ul>
           </div>
-
+        </div>
+        <div class="two">
           <img src="images/download.png" alt="Thinkfulbnb - download" />
+        </div>
+      </div>
+        </div>
         </div>
       </section>
 
       <!-- Blog -->
       <section id="blog" class="alternate-background">
+        
         <h2>Blog</h2>
-        <div class="row">
-          <div class=" col-md-3 col-lg-3">
+      
+
+        <div class="blog-ctnr">
+        
+          <div class="blog-item">
 
             <img src="images/blog-post-1.png" alt="Thinkfulbnb - blog post 1" />
-            <h3>>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
             <p>
               Sed vel scelerisque ex. Duis in pharetra neque, at tempus lorem.
               Aenean mi magna, posuere at quam sed, euismod gravida neque.
@@ -157,7 +185,7 @@
               vestibulum.
             </p>
             </div>
-            <div class="col col-md-3 col-lg-3 col-md-offset-2">
+            <div class="blog-item">
 
             <img src="images/blog-post-2.png" alt="Thinkfulbnb - blog post 2" />
             <h3>Mauris eget nisl quis metus ultrices venenatis</h3>
@@ -169,9 +197,9 @@
               vestibulum.
             </p>
           </div>
-            <div class="row"></div>
+            
 
-            <div class="col col-md-3 col-lg-3">
+            <div class="blog-item">
 
             <img src="images/blog-post-3.png" alt="Thinkfulbnb - blog post 3" />
             <h3>
@@ -185,7 +213,7 @@
               vestibulum.
             </p>
             </div>
-            <div class="col col-md-3 col-lg-3">
+            <div class="blog-item">
 
             <img src="images/blog-post-4.png" alt="Thinkfulbnb - blog post 4" />
             <h3>Aenean purus dui, aliquam vitae auctor vel</h3>
@@ -197,6 +225,8 @@
               vestibulum.
             </p>
           </div>
+          
+       
         </div>
       </section>
     </main>
