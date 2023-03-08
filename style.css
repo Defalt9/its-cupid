@@ -4,14 +4,10 @@
   text-align: center;
 }
 
-
 body {
   font-family: "Lato", sans-serif;
   color: #6b1a22;
 }
-
-
-
 
 h2 {
   font-size: 26px;
@@ -38,14 +34,12 @@ section {
 section.alternate-background {
   background-color: #a35766;
   color: #ecdbc9;
-  margin: 0 auto; 
-  
+  margin: 0 auto;
 }
 
 img {
-  width:100%;
+  width: 100%;
 }
-
 
 /* ---  Groups & Items --- */
 
@@ -70,19 +64,28 @@ header {
   background-color: #83092e;
   padding: 20px 20px 0 20px;
 }
-
+/*
 header nav {
   display: flex;
-  
 }
-
-
+*/
 .logo {
   font-family: "Tangerine", cursive;
-  font-size: 72px;
+  font-size: 60px;
   color: #ecdbc9;
   justify-content: space-between;
-  
+}
+
+.logocnt {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.findMatch {
+  display: flex;
+  margin: 10px;
+  justify-content: center;
 }
 
 header nav ul li {
@@ -107,25 +110,20 @@ header nav ul li a:hover {
 
 /* -------  Join Form ------- */
 
-
-
 form {
   border: 2px solid #6b1a22;
   display: block;
   padding: 10px;
 }
 
-  .join-form {
-    color: #8b0000;
-  }
-
-
-.input-container {
-display: flex;
-justify-content: space-between;
+.join-form {
+  color: #8b0000;
 }
 
-
+.input-container {
+  display: flex;
+  justify-content: space-between;
+}
 
 form label {
   font-weight: bold;
@@ -157,20 +155,18 @@ form button {
   gap: 20px;
 }
 
-   .one {
-    padding: 10px;
-    color:#8b0000;
-  }
+.one {
+  padding: 10px;
+  color: #8b0000;
+}
 
-  .two {
-    padding: 10px;
-  }
+.two {
+  padding: 10px;
+}
 
-  .three {
-    padding: 10px;
-  }
-
-
+.three {
+  padding: 10px;
+}
 
 /* ---Download section --- */
 .
@@ -182,10 +178,9 @@ form button {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-
 }
 
-.blog-item{
+.blog-item {
   width: 100%;
 }
 
@@ -207,25 +202,19 @@ footer p {
 
 /* -------  Media Query ------- */
 @media all and (min-width: 480px) {
-
-  header .logocnt {
+ .logocnt {
     display: flex;
     justify-content: space-between;
-   align-items: flex-end;
-   
+    align-items: baseline;
   }
-  
-
- 
- 
 
   #join .sec {
     display: flex;
     gap: 10px;
     justify-content: flex-start;
-   
+    align-items: center;
   }
-  
+
   .box-one {
     flex: 2 1 0;
   }
@@ -233,28 +222,23 @@ footer p {
   .box-two {
     flex: 1 1 0;
   }
-  
-  .join-form {
-    margin-top: 140px;;
+
+  /*.join-form {
+    margin-top: 140px;
   }
-
-
-  .boxx { display: flex; 
-    }
-.one {
- flex: 1 1 0
-}
-.two {
- flex: 1 1 0
-}
-.three {
-flex: 2 1 0
-}
-
-  
-  
-
-  
+*/
+  .boxx {
+    display: flex;
+  }
+  .one {
+    flex: 1 1 0;
+  }
+  .two {
+    flex: 1 1 0;
+  }
+  .three {
+    flex: 2 1 0;
+  }
 
   .download-container {
     display: flex;
@@ -262,33 +246,28 @@ flex: 2 1 0
   }
   .one {
     flex: 1 1 0;
-  
   }
   .two {
     flex: 1 1 0;
   }
-  
+
   .group {
     flex-direction: row;
   }
   .dctnr {
-    display:flex;
+    display: flex;
     justify-content: flex-start;
     gap: 10%;
     align-items: center;
   }
 
- .blog-item {
- width: 48%;
- }
+  .blog-item {
+    width: 48%;
+  }
 
- .blog-ctnr {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
- }
-
-
-
-
+  .blog-ctnr {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 }
